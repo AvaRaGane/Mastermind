@@ -3,14 +3,14 @@
 # Mastermindin kokeilua C++ syysloman ratoksi.
 # Ohjelman toiminnot:
 # Ohjelman käynnistyessä käynnistetään timeri, satunnaisluvun siemenlukua varten.
-# Pyydetään käyttäjältä vielä luku 1-20 väliltä, jolla kerrotaan siemenluku.
+# Pyydetään käyttäjältä vielä luku, jolla kerrotaan siemenluku.
 # Arvotaan satunnaislukuina 4 eri lukua, jotka vastaa värejä:
-# 1 valkoinen
-# 2 musta
-# 3 vihreä
-# 4 punainen
-# 5 keltainen
-# 6 sininen
+# 0 valkoinen
+# 1 musta
+# 2 vihreä
+# 3 punainen
+# 4 keltainen
+# 5 sininen
 # Pyydetään käyttäjältä ensimäinen arvaus, joka tehdään painamalla 4 eri nappia kunnes 
 # niissä on ilmoitettu halutut värit ja tämän jälkeen kuittamalla OK nappia.
 # Lokiin tulostuu ilmoitus oliko monta väriä oikein ja kuinka monta oikealla paikalla.
