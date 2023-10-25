@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QObject>
 #include <QDebug>
-#include <Qtimer>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,7 +24,8 @@ private:
     int mEka=0, mToka=0, mKolmas=0, mNeljas=0;
     int aEka=0, aToka=0, aKolmas=0, aNeljas=0;
     QTimer * pQTimer;
-
+    void varit(const QString &name, int amma);
+    int siirtoja=0;
 private slots:
     void colourButtonHandler();
     void startButtonHandler();

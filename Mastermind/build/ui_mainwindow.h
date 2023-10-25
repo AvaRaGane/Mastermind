@@ -17,6 +17,7 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -33,7 +34,8 @@ public:
     QPushButton *kolmas;
     QPushButton *neljas;
     QPushButton *check;
-    QLabel *loki;
+    QTextBrowser *Lokki;
+    QLabel *label;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -49,10 +51,10 @@ public:
         startti->setGeometry(QRect(230, 80, 80, 24));
         arpoja = new QLineEdit(centralwidget);
         arpoja->setObjectName("arpoja");
-        arpoja->setGeometry(QRect(90, 80, 113, 24));
+        arpoja->setGeometry(QRect(50, 80, 113, 24));
         info = new QLabel(centralwidget);
         info->setObjectName("info");
-        info->setGeometry(QRect(120, 50, 49, 16));
+        info->setGeometry(QRect(30, 50, 321, 16));
         eka = new QPushButton(centralwidget);
         eka->setObjectName("eka");
         eka->setGeometry(QRect(10, 260, 80, 61));
@@ -68,9 +70,12 @@ public:
         check = new QPushButton(centralwidget);
         check->setObjectName("check");
         check->setGeometry(QRect(420, 260, 111, 61));
-        loki = new QLabel(centralwidget);
-        loki->setObjectName("loki");
-        loki->setGeometry(QRect(580, 50, 201, 351));
+        Lokki = new QTextBrowser(centralwidget);
+        Lokki->setObjectName("Lokki");
+        Lokki->setGeometry(QRect(550, 30, 191, 491));
+        label = new QLabel(centralwidget);
+        label->setObjectName("label");
+        label->setGeometry(QRect(550, 10, 101, 16));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -95,7 +100,7 @@ public:
         kolmas->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         neljas->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         check->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        loki->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "Pelitapahtumat:", nullptr));
     } // retranslateUi
 
 };

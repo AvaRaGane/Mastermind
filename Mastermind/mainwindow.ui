@@ -30,7 +30,7 @@
    <widget class="QLineEdit" name="arpoja">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>50</x>
       <y>80</y>
       <width>113</width>
       <height>24</height>
@@ -40,9 +40,9 @@
    <widget class="QLabel" name="info">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>30</x>
       <y>50</y>
-      <width>49</width>
+      <width>321</width>
       <height>16</height>
      </rect>
     </property>
@@ -115,17 +115,27 @@
      <string>PushButton</string>
     </property>
    </widget>
-   <widget class="QLabel" name="loki">
+   <widget class="QTextBrowser" name="Lokki">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>50</y>
-      <width>201</width>
-      <height>351</height>
+      <x>550</x>
+      <y>30</y>
+      <width>191</width>
+      <height>491</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>10</y>
+      <width>101</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>Pelitapahtumat:</string>
     </property>
    </widget>
   </widget>
